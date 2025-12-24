@@ -11,7 +11,7 @@ class Pgmi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vvka-141/pgmi/releases/download/v0.7.1/pgmi_0.7.1_darwin_amd64.tar.gz"
-      sha256 "c839b1716421cef08f128590d3976048939164da2699d57368094c5688f67232"
+      sha256 "b3a35099b9c6898c9f59626f9f342babd4a14113e24e7e72e7776daeec5b19f4"
 
       def install
         bin.install "pgmi"
@@ -19,7 +19,7 @@ class Pgmi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vvka-141/pgmi/releases/download/v0.7.1/pgmi_0.7.1_darwin_arm64.tar.gz"
-      sha256 "2b686d76996144388eea1bc19841e4368a567e5d2760fae0502ecebb36ec48a2"
+      sha256 "aa8b035a0fe591cd22161239707f21eb3337babdbe149adead8faa3171e45105"
 
       def install
         bin.install "pgmi"
@@ -30,14 +30,14 @@ class Pgmi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vvka-141/pgmi/releases/download/v0.7.1/pgmi_0.7.1_linux_amd64.tar.gz"
-      sha256 "334a69a2e840356533085951ed55f21750e84405c792ec442e4fefd34b0ac144"
+      sha256 "f6282a9a30c9d6762ecfa5c11c6de016b9e9e863ad08bd782b862232ea328654"
       def install
         bin.install "pgmi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vvka-141/pgmi/releases/download/v0.7.1/pgmi_0.7.1_linux_arm64.tar.gz"
-      sha256 "dd14dbebc06f42331c69f3ab4bfe3ad9974ded85c3ac333d05812e31e288e16a"
+      sha256 "bbb92c3c1f4ac76c3009884a7c0331194bd6d9f8505508b21644cfc0bf3348f5"
       def install
         bin.install "pgmi"
       end
