@@ -5,21 +5,21 @@
 class Pgmi < Formula
   desc "PostgreSQL-native execution fabric for humans and autonomous agents"
   homepage "https://github.com/vvka-141/pgmi"
-  version "0.7.5"
+  version "0.8.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vvka-141/pgmi/releases/download/v0.7.5/pgmi_0.7.5_darwin_amd64.tar.gz"
-      sha256 "191f1d1953e952d99adb11ad772ccd169b6fdfc539ac85e8cde4f4800dbb574d"
+      url "https://github.com/vvka-141/pgmi/releases/download/v0.8.0/pgmi_0.8.0_darwin_amd64.tar.gz"
+      sha256 "93fb5889d993ff6aecbbdcd650e1ce17b7d2302be6887855dbcd918e9888bf7f"
 
       def install
         bin.install "pgmi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vvka-141/pgmi/releases/download/v0.7.5/pgmi_0.7.5_darwin_arm64.tar.gz"
-      sha256 "9babd0ace9965132626a1e8509e275ca76cde04afb1d5b9426344325354641e9"
+      url "https://github.com/vvka-141/pgmi/releases/download/v0.8.0/pgmi_0.8.0_darwin_arm64.tar.gz"
+      sha256 "2ce94a4110111b71236d4648054158b97cdc7d826c377879f73fb6a1c914d2d9"
 
       def install
         bin.install "pgmi"
@@ -29,15 +29,15 @@ class Pgmi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vvka-141/pgmi/releases/download/v0.7.5/pgmi_0.7.5_linux_amd64.tar.gz"
-      sha256 "e8c6a1138d7bf55a0829938094d64bcd53c07a368c199c131dbf2adabc81e48f"
+      url "https://github.com/vvka-141/pgmi/releases/download/v0.8.0/pgmi_0.8.0_linux_amd64.tar.gz"
+      sha256 "4807a1f325069d7803670f28f470b6f0089eda5585d055d3a6fd9b2a7e0622aa"
       def install
         bin.install "pgmi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vvka-141/pgmi/releases/download/v0.7.5/pgmi_0.7.5_linux_arm64.tar.gz"
-      sha256 "d6fc76fab405b935f6cabc34799626bd42df2e5e7d07dbd2278efa10eef835b2"
+      url "https://github.com/vvka-141/pgmi/releases/download/v0.8.0/pgmi_0.8.0_linux_arm64.tar.gz"
+      sha256 "32343d175ee4b990939d8224b07d97b441150de13d44d51c5c4ccb7b13e64282"
       def install
         bin.install "pgmi"
       end
